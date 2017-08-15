@@ -1,0 +1,19 @@
+{
+    "name": "crazymeeks/mailchimp",
+    "description": "A PHP library for Mailchimp",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jeff Claud",
+            "email": "jeffclaud17@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Crazymeeks\\MailChimp\\": "src/"
+        }
+    }
+}
