@@ -230,7 +230,9 @@ trait ManageSubscribers
 		$sp = array(
 			'email_address' => $this->subscriber_params['email'],
 			'status'        => $this->subscriber_params['status'],
-			'merge_fields'  => array('FNAME' => $this->subscriber_params['firstname'], 'LNAME' => $this->subscriber_params['lastname']),
+			'merge_fields'  => array_merge(
+				array('FNAME' => $this->subscriber_params['firstname'], 'LNAME' => $this->subscriber_params['lastname']),
+				$this->subscriber_params),
 		);
 
 		unset($this->subscriber_params['email']);
